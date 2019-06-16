@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body  style="min-height:1001vh;">
+  
+  <div id="object">
+    
+    my object 
+    
+  </div>
+  
+<script>
+  
+    window.addEventListener("scroll", function(event) {
+      
+    var top = this.scrollY,
+        left =this.scrollX;   
+        
+         var myObject  = document.getElementById("object") 
+         
+           myObject.style.cssText="color:red;position:relative;top:"+top*2+"px"; 
+      
+           console.log(top);
+  });
+  
+  
+  
+  </script>
+  
+
+</body>
+</html>
